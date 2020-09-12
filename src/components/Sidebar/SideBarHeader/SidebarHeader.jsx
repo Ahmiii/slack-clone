@@ -1,7 +1,7 @@
 import React from "react";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import CreateIcon from "@material-ui/icons/Create";
-
+import "./SidebarHeader.css";
 const SidebarHeader = () => {
   return (
     <div className="sidebar__header">
@@ -11,10 +11,8 @@ const SidebarHeader = () => {
           <FiberManualRecordIcon />
           Ahmed Faraz
         </h3>
-        <div>
-          <CreateIcon />
-        </div>
       </div>
+      <CreateIcon />
     </div>
   );
 };

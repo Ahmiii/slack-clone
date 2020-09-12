@@ -35,7 +35,7 @@
 }
 
 .header__right {
-  flex: 0.3;
+  flex: 0.2;
   display: flex;
   align-items: flex-end;
 }

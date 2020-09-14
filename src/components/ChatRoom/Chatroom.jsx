@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import ChatHeader from "./ChatHeader/ChatHeader";
 import "./Chatroom.css";
 
 const Chatroom = (props) => {
@@ -7,7 +8,7 @@ const Chatroom = (props) => {
   const { roomId } = useParams();
   return (
     <div className="chat">
-      <h1>you are in {roomId} room</h1>
+      <ChatHeader />
     </div>
   );
 };

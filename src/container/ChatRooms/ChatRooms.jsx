@@ -1,9 +1,9 @@
 import React from "react";
 import ChatRoom from "../../components/ChatRoom/Chatroom";
-
-const ChatRooms = (props) => {
+import "./ChatRoom.css";
+const ChatRooms = () => {
   return (
-    <div>
+    <div className="chat">
       <ChatRoom />
     </div>
   );

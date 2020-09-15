@@ -1,10 +1,10 @@
 import React from "react";
-import ChatRoom from "../../components/ChatRoom/Chatroom";
-import "./ChatRoom.css";
+import Chatroom from "../../components/ChatRoom/Chatroom";
+import "./ChatRooms.css";
 const ChatRooms = () => {
   return (
     <div className="chat">
-      <ChatRoom />
+      <Chatroom />
     </div>
   );
 };

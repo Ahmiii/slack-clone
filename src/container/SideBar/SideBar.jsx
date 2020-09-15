@@ -28,6 +28,18 @@ const Sidebar = () => {
     );
   }, []);
 
+  const onClickAddChannal = () => {
+    const channelName = prompt("Please enter channal name");
+
+    if (channelName) {
+      db.collection("rooms").add({
+        name: channelName,
+      });
+    } else if (Channals.id) {
+      console.log(Channals.id);
+    }
+  };
+
   return (
     <div className="sidebar">
       <SideBarHeader />
@@ -43,10 +55,18 @@ const Sidebar = () => {
       <hr />
       <SideBarOption Icon={ExpandMoreIcon} title="Channal" />
       <hr />
-      <SideBarOption Icon={AddIcon} title="Add Channal" />
+      <SideBarOption
+        Icon={AddIcon}
+        addingChannal={onClickAddChannal}
+        title="Add Channal"
+      />
 
       {Channals.map((channal) => (
-        <SideBarOption title={channal.name} />
+        <SideBarOption
+          key={channal.id}
+          title={channal.name}
+          channalId={channal.id}
+        />
       ))}
     </div>
   );

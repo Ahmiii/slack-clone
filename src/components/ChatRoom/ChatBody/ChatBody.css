@@ -1,4 +1,24 @@
 .chat__body {
 }
 .chat__messages {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.chat__messages > img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  border-radius: 7px;
+}
+
+.message__info {
+  padding-left: 20px;
+}
+
+.message__timestamp {
+  color: gray;
+  font-weight: 300;
+  font-size: 13px;
 }

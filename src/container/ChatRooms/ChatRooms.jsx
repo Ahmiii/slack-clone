@@ -34,7 +34,7 @@ const ChatRooms = () => {
           message={message.message}
           timestamp={message.timestamp}
           user={message.user}
-          userImage={message.userImage}
+          userImage={message.usreImage}
         />
       ))}
     </div>

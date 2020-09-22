@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "./components/Header/Header";
 import SideBar from "./container/SideBar/SideBar";
 import ChatRooms from "./container/ChatRooms/ChatRooms";

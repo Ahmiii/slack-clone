@@ -3,7 +3,7 @@ import ChatroomHeader from "../../components/ChatRoom/ChatHeader/ChatHeader";
 import { useParams } from "react-router-dom";
 import db from "../../config/firebase";
 import ChatBody from "../../components/ChatRoom/ChatBody/ChatBody";
-import ChatInput from "../../components/ChatRoom/Chat/ChatInput";
+import ChatInput from "./Chat/ChatInput";
 import "./ChatRooms.css";
 const ChatRooms = () => {
   const roomId = useParams();
@@ -35,10 +35,10 @@ const ChatRooms = () => {
           message={message.message}
           timestamp={message.timestamp}
           user={message.user}
-          userImage={message.usreImage}
+          userImage={message.userImage}
         />
       ))}
-      <ChatInput channelName={roomDetails?.name} channelId={roomDetails?.id} />
+      <ChatInput channelName={roomDetails?.name} channelId={roomId?.roomId} />
     </div>
   );
 };

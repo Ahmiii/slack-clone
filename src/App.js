@@ -4,9 +4,10 @@ import SideBar from "./container/SideBar/SideBar";
 import ChatRooms from "./container/ChatRooms/ChatRooms";
 import Login from "./authentication/Login/Login";
 import { Route, Switch } from "react-router-dom";
+import { useStateValue } from "./ContextAPI/StateProvider";
 import "./App.css";
 function App() {
-  const [user, setuser] = useState(null);
+  const [{ user }, dispatch] = useStateValue();
   if (!user) {
     return <Login />;
   }

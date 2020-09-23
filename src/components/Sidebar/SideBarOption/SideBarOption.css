@@ -3,7 +3,7 @@
   align-items: center;
   font-size: 12px;
   cursor: pointer;
-  padding: 2px;
+  padding-left: 2px;
 }
 .sidebarOption:hover {
   opacity: 0.9;

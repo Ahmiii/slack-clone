@@ -5,7 +5,10 @@
   place-items: center;
 }
 .login__container {
-  padding: 180px;
+  padding-top: 152px;
+  padding-bottom: 152px;
+  padding-right: 50px;
+  padding-left: 50px;
   text-align: center;
   background-color: white;
   border-radius: 50px;
@@ -13,10 +16,10 @@
 }
 .login__container > img {
   object-fit: contain;
+  height: 100px;
   margin-bottom: 40px;
 }
 .login__container > button {
-  font-size: large;
   margin-top: 50px;
   text-transform: inherit !important;
   background-color: #0a8d48 !important;

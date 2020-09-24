@@ -32,6 +32,7 @@ const ChatRooms = () => {
       <ChatroomHeader channelName={roomDetails} />
       {roomMessages.map((message) => (
         <ChatBody
+          key={message.timestamp}
           message={message.message}
           timestamp={message.timestamp}
           user={message.user}

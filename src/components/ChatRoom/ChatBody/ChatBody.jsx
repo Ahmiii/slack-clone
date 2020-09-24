@@ -6,7 +6,7 @@ const ChatBody = (props) => {
   return (
     <div className="chat__body">
       <div className="chat__messages">
-        <img src={userImage} alt="faraz" />
+        <img src={userImage} loading="lazy" alt="faraz" />
         <div className="message__info">
           <h5>
             {user}{" "}
